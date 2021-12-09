@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.busqueda.BusquedaFragment">
+
+
+    <TextView
+        android:id="@+id/tv_EncabezadoBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40px"
+        android:text="@string/encabezado_busqueda"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/sp_titulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_mostrarDatosEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/rojoJuntaCyL"
+        android:text="@string/mostrar_datos"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_datosEvento"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_tituloBusqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20px"
+            android:paddingBottom="10px">
+
+            <TextView
+                android:id="@+id/tv_fechaBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_localidadBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20px"
+                android:text="TextView"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10px"
+            android:paddingBottom="10px">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/horaIni"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_horaIniBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="30px"
+                android:text="@string/horaFin"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_horaFinBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_precioBusqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_destinatariosBusqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_lugarBusqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_imagenBusqueda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_margin="0px"
+            android:layout_weight="1"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

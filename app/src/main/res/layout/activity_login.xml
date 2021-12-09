@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".login.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:maxHeight="400px"
+        android:minHeight="400px"
+        app:srcCompat="@drawable/ic_logotipo_jcyl" />
+
+    <EditText
+        android:id="@+id/et_emailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#aaaaab"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="15dp"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaab" />
+
+    <EditText
+        android:id="@+id/et_passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#aaaaab"
+        android:drawableLeft="@drawable/ic_key"
+        android:drawablePadding="15dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaab" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/rojoJuntaCyL"
+        android:text="@string/login"
+        android:textColor="@color/white" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50px" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50px" />
+
+    <EditText
+        android:id="@+id/et_emailSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#aaaaab"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="15dp"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaab" />
+
+    <EditText
+        android:id="@+id/et_passwordSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#aaaaab"
+        android:drawableLeft="@drawable/ic_key"
+        android:drawablePadding="15dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaab" />
+
+    <Button
+        android:id="@+id/bt_Signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/rojoJuntaCyL"
+        android:text="@string/signin"
+        android:textColor="@color/white" />
+
+
+
+</LinearLayout>

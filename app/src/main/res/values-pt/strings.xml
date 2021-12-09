@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">EventosJCyL</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Definições</string>
+    <string name="logout">Fechar Sessão</string>
+    <string name="login">Iniciar sessão</string>
+    <string name="signin">Registrar novo usuário</string>
+    <string name="correo">Correio eletrônico</string>
+    <string name="password">Senha</string>
+    <string name="cambiar_idioma">Mudar idioma</string>
+    <string name="texto_cambar_idioma">Selecione o idioma do app</string>
+    <string name="espanol">Espanhol</string>
+    <string name="ingles">Inglês</string>
+    <string name="portugues">Português</string>
+
+    <string name="menu_home">Lista de eventos</string>
+    <string name="menu_gallery">Olhe para</string>
+    <string name="menu_slideshow">Definições</string>
+
+    <string name="creator">Esteban Rodriguez</string>
+
+    <string name="encabezado_busqueda">Select an event to show more details</string>
+    <string name="mostrar_datos">Mostrar dados</string>
+
+
+    <string name="loading">CARREGANDO</string>
+    <string name="horaFin">"Fim do tempo: "</string>
+    <string name="horaIni">"Hora de início: "</string>
+</resources>
