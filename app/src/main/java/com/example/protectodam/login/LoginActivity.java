@@ -136,7 +136,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                    CustomIntent.customType(LoginActivity.this, "left-to-rigth");//animacion de transicion
                     finish();
                 } else {
                     Toast.makeText(LoginActivity.this, "Correo o contreaseña incorrectos", Toast.LENGTH_LONG).show();
@@ -149,14 +148,11 @@ public class LoginActivity extends AppCompatActivity {
         firebaseAuth.createUserWithEmailAndPassword(correoSignin, passwordSignin).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
-                if (task.isSuccessful()){
-                    if (task.isSuccessful()) {
-                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                        //CustomIntent.customType(LoginActivity.this, "left-to-rigth");//animacion de transicion
-                        finish();
-                    } else {
-                        Toast.makeText(LoginActivity.this, "Error al registrar nuevo usuario", Toast.LENGTH_LONG).show();
-                    }
+                if (task.isSuccessful()) {
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    finish();
+                } else {
+                    Toast.makeText(LoginActivity.this, "Error al registrar nuevo usuario", Toast.LENGTH_LONG).show();
                 }
             }
         });
